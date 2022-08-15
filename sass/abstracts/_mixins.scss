@@ -1,0 +1,65 @@
+@mixin transition-ease{
+    transition: all 300ms ease-in-out;
+}
+
+@mixin flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flex-jc-between{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin size($width, $height: $width){
+    width: $width;
+    height: $height;
+}
+
+// animate css properties
+$animation-speed: .3s!default;
+@mixin animate($properties, $duration: $animation-speed, $easing: ease-in-out){
+    $list: ();
+    @each $prop in $properties{
+        $str: #{$prop} #{$duration} #{$easing};
+        $list: append($list, $str, comma);
+    }
+    transition: $list;
+}
+
+
+// breakpoints
+$breakpoints-up: (
+    "sm": "576px", 
+    "md": "768px", 
+    "lg": "992px", 
+    "xl": "1200px", 
+    "xxl": "1400px"
+);
+
+$breakpoints-down: (
+    "sm": "575.99px", 
+    "md": "767.99px", 
+    "lg": "991.99px", 
+    "xl": "1199.99px", 
+    "xxl": "1399.99px"
+);
+
+@mixin breakpoint-up($size){
+    @media(min-width: map-get($breakpoints-up, $size)){
+        @content;
+    }
+}
+
+@mixin breakpoint-down($size){
+    @media(max-width: map-get($breakpoints-down, $size)){
+        @content;
+    }
+}
+
+@mixin border-c{
+    border-radius: 50%;
+}

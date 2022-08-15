@@ -1,0 +1,112 @@
+.sc-navbar{
+    &-top{
+        padding: 7px 0 7px 0;
+
+        &-adv{
+            border: border(opacity(#c0c0c0, 0.4));
+            padding: 10px;
+
+            @include breakpoint-down(lg){
+                display: none;
+            }
+        }
+    }
+
+   &-main{
+        background: rgb(16,6,90);
+        background: linear-gradient(90deg, rgba(16,6,90,1) 0%, rgba(136,6,123,1) 50%, rgba(16,6,90,1) 100%);
+        min-height: 67px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+        .sc-nav-item{
+            margin-right: 40px;
+
+            @include breakpoint-down(xxl){
+                margin-right: 25px;
+                .sc-nav-link{
+                    font-size: 18px;
+                }
+            }
+            @include breakpoint-down(xl){
+                margin-right: 25px;
+                .sc-nav-link{
+                    font-size: 17px;
+                }
+            }
+
+            .sc-nav-link{
+                @include transition-ease;
+                &:hover{
+                    opacity: 0.9;
+                }
+            }
+        }
+
+        .sc-nav-btns{
+        }
+   }
+
+
+   @include breakpoint-down(lg){
+    display: flex;
+        justify-content: space-between;
+        border-bottom: 1.5px solid $clr-grey-C0;
+
+        .sc-navbar-main{
+            background: none;
+
+            .sc-nav-btns{
+                .icon-btn{
+                    color: $clr-secondary!important;
+                }
+
+                .hamburger-icon{
+                    margin-left: 10px;
+                    > div{
+                        background-color: $clr-secondary!important;
+                    }
+                }
+            }
+        }
+    }
+   
+}
+
+.sc-tags-search{
+    padding: 10px;
+
+    .sc-tags-list{
+        li {
+            @include transition-ease;
+            display: inline;
+            a:hover{
+                color: $clr-secondary;
+            }
+        }
+    }
+    .sc-search-box{
+        max-width: 330px;
+        background-color: $clr-grey-DF;
+        border-radius: 20px!important;
+        overflow: hidden;
+        height: 42px;
+    
+        .form-control{
+            height: 42px;
+            padding: 4px 5px 4px 26px;
+    
+            &:focus{
+                background-color: $clr-grey-DF;
+            }
+        }
+        .input-group-text{
+            padding-right: 26px;
+        }
+    }
+}
+
+
+
+
+// media queries

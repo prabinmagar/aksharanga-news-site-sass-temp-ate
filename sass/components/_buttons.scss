@@ -1,0 +1,121 @@
+
+// ham burger icon
+.hamburger-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 16px;
+
+    > div{
+        width: 24px;
+        height: 2px;
+        background-color: $clr-black;
+        @include transition-ease;
+    }
+    .line-1{
+        width: 18px;
+    }
+    .line-3{
+        width: 18px;
+    }
+
+    &:hover{
+        .line-1{
+            width: 100%;
+        }
+        .line-3{
+            width: 100%;
+        }
+    }
+}
+
+.icon-btn{
+    border: none;
+    outline: 0;
+    cursor: pointer;
+    font-size: 25px;
+    @include flex-center;
+}
+
+// icon link 
+.link-icon{
+    width: 31px;
+    height: 31px;
+    background-color: #dbebf2;
+    color: #E20A17;
+    @include flex-center;
+    border-radius: 50%;
+}
+
+// item button link
+.itm-btn-link{
+    display: flex;
+    align-items: center;
+    outline: 0;
+    border: none;
+    @include transition-ease;
+
+    span{
+        &:nth-child(1){
+            margin-right: 12px;
+        }
+    }
+
+    &:hover{
+        opacity: 0.8;
+    }
+}
+
+// vid play button
+.vid-play-btn{
+    width: 70px;
+    display: inline-block;
+    box-shadow: rgba(0, 0, 0, 0.9) 0px 10px 50px;
+    border-radius: 50%;
+    @include transition-ease;
+    animation: scaleEffect ease-in-out infinite 2500ms;
+
+    @keyframes scaleEffect{
+        0%{transform: scale(1);}
+        50%{transform: scale(1.2);}
+        100%{transform: scale(1);}
+    }
+    
+}
+
+%btn-shared{
+    background-color: red;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 33px;
+    letter-spacing: 2%;
+    height: 60px;
+    line-height: 60px;
+    padding: 2px 30px;
+    border: none;
+    border-radius: 50px;
+    @include transition-ease;
+}
+
+.btn-gray77{
+    @extend %btn-shared;
+    background: rgba(196, 196, 196, 0.25);
+    color: $clr-primary;
+
+    &:hover{
+        background-color: $clr-primary;
+        color: $clr-white;
+    }
+}
+
+.btn-primary{
+    @extend %btn-shared;
+    background: $clr-primary;
+    color: $clr-white;
+
+    &:hover{
+        background-color: rgba(196, 196, 196, 0.25);
+        color: $clr-primary;
+    }
+}

@@ -1,0 +1,51 @@
+.sc-side-navbar{
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: hsl(0, 0%, 96%);
+    padding: 60px 38px;
+    transform: translateX(100%);
+    @include transition-ease;
+
+    @include breakpoint-up(sm){
+        width: 320px;
+    }
+
+    .close-btn{
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        color: $clr-primary;
+        @include transition-ease;
+
+        &:hover{
+            opacity: 0.9;
+        }
+    }
+
+    .side-nav-item{
+        .side-nav-link{
+            display: block;
+            padding: 7px 0;
+            font-weight: 600;
+            font-size: 20px;
+            color: black(0.6);
+            @include transition-ease;
+
+            &:hover{
+                background-color: black(0.08);
+                padding-left: 20px;
+            }
+        }
+    }
+}
+
+
+// js related classes
+.js-show-navbar{
+    transform: translateX(0);
+}
+

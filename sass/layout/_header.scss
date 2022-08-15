@@ -1,0 +1,48 @@
+.header{
+    .hero-content{
+        min-height: 695px;
+        overflow-x: hidden;
+
+        .hero-item{
+            color: $clr-white;
+
+            .itm-l{
+                .itm-title{
+                    margin-top: 122px;
+                }
+            }
+
+            .itm-r{
+                .itm-block{
+                    padding: 33px 10px 33px 60px;
+                    position: relative;
+
+                    &::after{
+                        position: absolute;
+                        content: "";
+                        top: 0;
+                        right: -99%;
+                        background-color: $clr-primary;
+                        width: 100%;
+                        height: 100%;
+                    }
+
+                    @include breakpoint-up(lg){
+                        padding: 36px 20px 36px 60px;
+                    }
+                }
+
+                .itm-link{
+                    span{
+                        @include transition-ease;
+                    }
+                    &:hover{
+                        span{
+                            margin-left: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

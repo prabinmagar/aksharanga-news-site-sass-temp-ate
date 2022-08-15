@@ -1,0 +1,33 @@
+
+.slider-idx-3{
+    position: relative;
+
+    .owl-nav{
+        .owl-prev, .owl-next{
+            position: absolute;
+            top: 30%;
+            width: 35px;
+            height: 35px;
+            background: #F9FBFD!important;
+            display: inline-block;
+            @include border-c;
+            @include flex-center;
+            @include transition-ease;
+
+            &:hover{
+                background-color: $clr-primary!important;
+            }
+
+            span{
+                font-size: 48px;
+                padding-bottom: 4px;
+            }
+        }
+        .owl-prev{
+            left: -10px;
+        }
+        .owl-next{
+            right: -10px;
+        }
+    }
+}

@@ -1,0 +1,13 @@
+
+body{
+    font-family: $font-base;
+    font-size: $font-base-size;
+    font-weight: $font-base-weight;
+}
+
+.fnt-sarala{font-family: $font-sarala;}
+.fnt-mukta{font-family: $font-base;}
+
+h1, h2, h3, h4, h5, h6{
+    line-height: 1.5;
+}

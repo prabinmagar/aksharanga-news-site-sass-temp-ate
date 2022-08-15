@@ -1,0 +1,71 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    height: 100%;
+}
+body{
+    -webkit-font-smoothing: antialiased;
+}
+ul, ol{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: unset;
+    @include transition-ease;
+
+    &:focus{
+        color: unset;
+    }
+
+    &:hover{
+        color: unset;
+        opacity: 0.9;
+    }
+}
+
+img, picture, video, canvas, svg{
+    max-width: 100%;
+    display: block;
+}
+input, button, textarea, select{
+    font: inherit;
+    outline: 0;
+}
+h1, h2, h3, h4, h5, h6, p{
+    overflow-wrap: break-word;
+}
+button{
+    background-color: transparent;
+    cursor: pointer;
+}
+textarea{
+    resize: none;
+}
+
+// bootstrap resets
+.btn:focus{
+    outline: 0;
+    box-shadow: none;
+}
+.row{
+    margin-right: 0!important;
+    margin-left: 0!important;
+}
+ul{
+    margin: 0!important;
+    padding: 0;
+}
+a:hover, a:focus{
+    
+}
+.form-control{
+    &:focus{
+        box-shadow: none;
+    }
+}
