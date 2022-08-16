@@ -43,9 +43,23 @@
     }
 }
 
+.navbar-overlay-modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    @include size(100%, 100%);
+    z-index: 998;
+    opacity: 0;
+    visibility: hidden;
+    @include transition-ease;
+    background-color: black(0.4);
+}
 
 // js related classes
 .js-show-navbar{
     transform: translateX(0);
 }
-
+.js-show-navbar-modal{
+    opacity: 1;
+    visibility: visible;
+}

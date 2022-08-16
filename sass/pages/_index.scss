@@ -270,9 +270,15 @@
 .slider-idx-6{
     position: relative;
     .itm-card{
-        min-width: 343px!important;
         .itm-card-img{
-            height: 538px;
+            height: 380px;
+        }
+
+        @include breakpoint-up(sm){
+            min-width: 343px!important;
+            .itm-card-img{
+                height: 538px;
+            }
         }
     }
 
@@ -314,6 +320,17 @@
                     }
                     .itm-card-body{
                         width: calc(100% - 106px);
+                    }
+                }
+            }
+            .col-m{
+                .col-block{
+                    padding-right: 36px;
+                    padding-left: 36px;
+
+                    @include breakpoint-up(sm){
+                        padding-right: 60px;
+                        padding-left: 60px;
                     }
                 }
             }
