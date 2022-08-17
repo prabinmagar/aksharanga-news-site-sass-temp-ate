@@ -104,6 +104,12 @@
 }
 
 
+.dropdown-menu{
+    .dropdown-item{
+        &:hover{
+            background-color: $clr-primary;
+            color: $clr-white;
+        }
+    }
+}
 
-
-// media queries

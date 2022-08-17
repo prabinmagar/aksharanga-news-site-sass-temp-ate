@@ -83,7 +83,6 @@
     }
     
 }
-
 %btn-shared{
     background-color: red;
     font-size: 20px;
@@ -117,5 +116,35 @@
     &:hover{
         background-color: rgba(196, 196, 196, 0.25);
         color: $clr-primary;
+    }
+}
+
+// form button
+.form-btn{
+    border: 1px solid #726C6C;
+    background-color: $clr-primary;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 2%;
+    color: $clr-white;
+    display: block;
+
+    &:hover{
+        color: $clr-primary;
+        border-color: $clr-primary;
+    }
+}
+.flat-btn-primary{
+    background: $clr-primary;
+    border-radius: 5px;
+    padding: 12px 30px;
+    font-weight: 800;
+    font-size: 18px;
+    letter-spacing: 2%;
+    color: $clr-white;
+
+    &:hover{
+        color: $clr-primary;
+        border-color: $clr-primary;
     }
 }

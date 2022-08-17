@@ -1,0 +1,58 @@
+.sc-ns-post{
+    .ns-single-wrap{
+        .ns-single-l{
+            margin-top: 89px;
+
+            .arrow-down-icon{
+                width: 20px;
+                @include breakpoint-up(md){
+                    width: 32px;
+                }
+            }
+
+            .post-form-sc{
+                box-shadow: 0px 4px 15px 0px #9E9E9E40;
+                padding: 64px 26px 64px 26px;
+
+                @include breakpoint-up(md){
+                    padding: 64px 40px 64px 48px;
+                }
+
+                @include breakpoint-down(sm){
+                    p{
+                        font-size: 16px;
+                        line-height: 26px;
+                    }
+                }
+
+                .form-control{
+                    border: 1px solid #00000080;
+                    height: 49px;
+                    border-radius: 0;
+                    font-size: 18px;
+
+                    @include breakpoint-down(sm){
+                        height: 38px;
+                    }
+                }
+
+                .form-label{
+                    @include breakpoint-down(sm){
+                        font-size: 16px;
+                        margin-bottom: 6px!important;
+                    }
+                }
+
+                textarea{
+                    height: 300px!important;
+                }
+            }
+            .form-elem{
+                margin-bottom: 38px;
+                @include breakpoint-down(sm){
+                    margin-bottom: 24px;
+                }
+            }
+        }
+    }
+}

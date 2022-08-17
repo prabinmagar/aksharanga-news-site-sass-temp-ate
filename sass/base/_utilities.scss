@@ -8,6 +8,9 @@
 .text-black-a{color: $clr-black-a;}
 .text-black-a-07{color: opacity(#150202, 0.7);}
 .text-grey{color: $clr-grey;}
+.text-blue{color: $clr-blue;}
+.text-davy-grey{color: $clr-davy-grey;}
+.text-whitesmoke{color: $clr-whitesmoke;}
 
 
 // backgrounds
@@ -21,6 +24,7 @@
 
 .bg-grey-DF{background-color: $clr-grey-DF;}
 .bg-grey-DF-08{background-color: opacity(#dfdfdf, 0.8);}
+.bg-whitesmoke{background-color: $clr-whitesmoke;}
 
 // font weights
 .fw-2{font-weight: 200;}
@@ -34,6 +38,7 @@
 // letter spacing
 .ls-1{letter-spacing: 1px;}
 .ls-2{letter-spacing: 2px;}
+.ls-2-p{letter-spacing: 2%;}
 
 // font sizes
 .fs-11{font-size: 11px;}
@@ -100,9 +105,8 @@
 }
 
 // border-radius
-.border-r-20{
-    border-radius: 20px;
-}
+.border-r-20{border-radius: 20px;}
+.border-r-10{border-radius: 10px;}
 
 // padding
 .py-8{
@@ -157,9 +161,15 @@
         color: $clr-primary;
 
         @include breakpoint-up(sm){
-            font-size: 30px;
+            font-size: 25px;
         }
         @include breakpoint-up(md){
+            font-size: 30px;
+        }
+        @include breakpoint-up(xl){
+            font-size: 35px;
+        }
+        @include breakpoint-up(xxl){
             font-size: 40px;
         }
     }
@@ -283,6 +293,33 @@
     outline-offset: 5px;
     margin-right: 5px;
     margin-left: 5px;
+    @include flex-center;
+
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &-lg{
+        @extend .avatar;
+        width: 75px;
+        height: 75px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    &-md{
+        @extend .avatar;
+        width: 50px;
+        height: 50px;
+    }
+
+    &-sm{
+        @extend .avatar;
+        width: 45px;
+        height: 45px;
+    }
 }
 
 // border - all

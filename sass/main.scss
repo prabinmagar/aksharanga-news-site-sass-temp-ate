@@ -16,7 +16,9 @@
 @import "layout/header";
 @import "layout/navbar";
 @import "layout/footer";
-// pages
-@import "pages/index";
 // vendors
 @import "vendors/customize";
+// pages
+@import "pages/index";
+@import "pages/news_single";
+@import "pages/news_post";

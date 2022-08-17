@@ -135,4 +135,11 @@ $(document).ready(function(){
         setContent(url, imgpath);
     }
     intitalContent();
+});
+
+
+// tooltop bootstrap 
+var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl)
 })
