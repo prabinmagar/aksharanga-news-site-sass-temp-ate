@@ -11,16 +11,18 @@
 .text-blue{color: $clr-blue;}
 .text-davy-grey{color: $clr-davy-grey;}
 .text-whitesmoke{color: $clr-whitesmoke;}
+.text-dark-cyan{color: $clr-dark-cyan;}
 
 
 // backgrounds
 .bg-primary{background-color: $clr-primary!important;}
-.bg-secondary{background-color: $clr-secondary;}
+.bg-secondary{background-color: $clr-secondary!important;}
 .bg-primary-1{background-color: $clr-primary-1;}
 .bg-white{background-color: $clr-white;}
 .bg-black{background-color: $clr-black;}
 // grey C0 variations
 .bg-grey-C0{background-color: $clr-grey-C0;}
+.bg-dark-yellow{background-color: $clr-dark-yellow;}
 
 .bg-grey-DF{background-color: $clr-grey-DF;}
 .bg-grey-DF-08{background-color: opacity(#dfdfdf, 0.8);}
@@ -89,6 +91,7 @@
 .lh-33{line-height: 33px;}
 .lh-26{line-height: 26px;}
 .lh-30{line-height: 30px;}
+.lh-35{line-height: 35px;}
 .lh-40{line-height: 40px;}
 .lh-45{line-height: 45px;}
 .lh-65{line-height: 65px;}

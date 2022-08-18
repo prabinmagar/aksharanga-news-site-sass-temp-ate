@@ -1,0 +1,51 @@
+.pg-form{
+    font-family: $font-poppins!important;
+    min-height: 100vh;
+    .pg-form-wrapper{
+        max-width: 682px;
+        padding: 36px;
+        @include breakpoint-up(md){
+            padding: 41px 90px;
+        }
+
+        .pg-form-title{
+            color: #043133;
+            font-weight: 600;
+            font-size: 24px;
+            margin-bottom: 24px;
+            
+            @include breakpoint-up(sm){
+                font-size: 30px;
+            }
+        }
+
+        .form-label{
+            color: #4D5959;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 30px;
+        }
+        .form-control{
+            background: #EFF0F2;
+            height: 50px;
+            padding: 0 25px;
+            border-radius: 3px;
+            border: none;
+        }
+        .input-group-text{
+            background-color: $clr-whitesmoke;
+            border: none;
+            padding-right: 20px;
+            @include transition-ease;
+
+            &:hover{
+                color: $clr-primary;
+            }
+        }
+
+        .flat-btn-primary{
+            width: 100%;
+            font-weight: 600!important;
+        }
+    }
+}

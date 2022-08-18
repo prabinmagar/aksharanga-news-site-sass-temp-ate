@@ -120,6 +120,8 @@ $(document).ready(function(){
         })
     })
 
+
+    // setting the gallery content 
     const setContent = (url, imgpath) => {
         itemDisplayContainer.children(".display-img").attr('src', imgpath);
         itemDisplayContainer.attr('href', url);
@@ -127,6 +129,7 @@ $(document).ready(function(){
         itemDisplayContainer.children().children('.display-info').removeClass('d-none')
     }
 
+    // setting content for gallery initially
     const intitalContent = () => {
         let tempContent = $(itemList[0]).children().clone();
         itemDisplayContainer.html(tempContent);

@@ -232,26 +232,6 @@
     .ns-single-form{
         border-top: 1px solid #7B7B7BCC;
 
-        .social-link-btn{
-            border: none;
-            background-color: #E9F1FF;
-            padding: 11px 14px;
-            margin-right: 10px;
-            @include transition-ease;
-
-            span{
-                font-size: 16px;
-                line-height: 24px;
-                color: #4285F4;
-                font-weight: 400;
-            }
-
-            &:hover, &:focus{
-                border: none;
-                transform: scale(0.95);
-            }
-        }
-
         .ns-block-r{
             .form-control{
                 height: 44px;
