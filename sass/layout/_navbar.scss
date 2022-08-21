@@ -73,21 +73,49 @@
 .sc-tags-search{
     padding: 10px;
 
+    .sc-tags-list-wrapper{
+        @include breakpoint-down(xl){
+            overflow-x: scroll;
+            margin-right: 30px;
+        }
+
+        &::-webkit-scrollbar {
+            height: 4px;
+
+            &-track{
+                border-radius: 8px;
+                box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+            }
+            &-thumb{
+                background-color: $clr-primary;
+                border-radius: 8px;
+            }
+        }
+    }
     .sc-tags-list{
+        width: 100%;
         li {
             @include transition-ease;
             display: inline;
-            a:hover{
-                color: $clr-secondary;
+            a{
+                color: #666666;
+                white-space: nowrap;
+                &:hover{
+                    color: $clr-secondary;
+                }
             }
         }
     }
     .sc-search-box{
-        max-width: 330px;
+        max-width: 100%;
         background-color: $clr-grey-DF;
         border-radius: 20px!important;
         overflow: hidden;
         height: 42px;
+
+        @include breakpoint-up(md){
+            max-width: 330px;
+        }
     
         .form-control{
             height: 42px;
